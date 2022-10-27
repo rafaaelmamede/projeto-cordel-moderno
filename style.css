@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Fuzzy Bubbles' ;
+    src: url(fontes/Fuzzy_Bubbles/FuzzyBubbles-Bold.ttf) format('opentype');
+}
+@font-face {
+    font-family:'Passion One' ;
+    src: url(fontes/Passion_One/PassionOne-Bold.ttf) format('opentype');
+}
+:root{
+    --fonte1:'Passion One';
+    --fonte2:'Fuzzy Bubbles';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+
+header > h1{
+    font-size: 9vw;
+    font-family: var(--fonte1);
+    font-variant: small-caps;
+    padding-top: 50px;
+    
+}
+header > p{
+    padding-bottom: 50px;
+}
+
+a{
+    color: aliceblue;
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 20px;
+    line-height: 2em;
+    font-family: var(--fonte2);
+    font-size: 3vw;
+}
+
+section > p {
+    padding-bottom: 1em;
+}
+
+section.normal{
+    background-color: aliceblue;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(41, 41, 41);
+    color: aliceblue;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.205);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#flores{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;  
+}
+
+section#cartas{
+    background-image: url(imagens/background002.jpg);
+}
+
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.329);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.74);
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+
